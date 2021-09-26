@@ -22,6 +22,6 @@ Para **ejecutar** el proyecto recién creado, abriremos un terminal e iremos al 
 flutter run
 ```
 
-**CONSEJO**: Si usamos VSCode, también podemos ejecutar el proyecto pulsando **Ejecutar > Iniciar depuración** o **Ejecutar > Ejecutar Sin depuración**. 
+**CONSEJO**: Si usamos VSCode, también podemos ejecutar el proyecto pulsando **Ejecutar > Iniciar depuración** o **Ejecutar > Ejecutar Sin depuración**. Si aparece un desplegable con varias opciones, seleccionar la opción **Dart & Flutter**.
 
 Esto puede ser más conveniente, ya que si hacemos cambios en los archivos y los guardamos, se aplicarán los cambios automáticamente, sin necesidad de hacerlo manualmente presionando `r` o `R` en el terminal mientras se esté ejecutando `flutter run`
