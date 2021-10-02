@@ -33,7 +33,9 @@ int addNumbers(int num1, int num2) {
 
 void main() {
   int result = addNumbers(1, 2);
+  print(result); // mostrará 3
   result = addNumbers(2, 4);
+  print(result); // mostrará 6
 }
 ```
 
