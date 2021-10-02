@@ -27,13 +27,14 @@ Por ello, el archivo `lib/main.dart` (y dentro de él la función `void main() {
 Para declarar nuevas funciones y usarlas, puede tomarse el siguiente código de ejemplo:
 
 ```dart
-void addNumbers(int num1, int num2) {
+int addNumbers(int num1, int num2) {
   return num1 + num2;
 }
 
 void main() {
-  print(addNumbers(1, 2));
+  int result = addNumbers(1, 2);
+  result = addNumbers(2, 4);
 }
 ```
 
-- El nombre de la nueva función se llama `addNumbers`, y se le pasan 2 parámetros: una variable de tipo entero (`int`) llamada `num1`, y otra variable de tipo entero (`int`) llamada `num2`. Al llamar a esta función en `void main()`, lo que hace es mostrar por pantalla la suma de los 2 parámetros.
+- El nombre de la nueva función se llama `addNumbers` (devolverá un valor de tipo entero `int`), y se le pasan 2 parámetros: una variable de tipo entero (`int`) llamada `num1`, y otra variable de tipo entero (`int`) llamada `num2`. Al llamar a esta función en `void main()`, lo que hace es mostrar por pantalla la suma de los 2 parámetros.
