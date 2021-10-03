@@ -60,3 +60,16 @@ void main() => runApp(MyApp());
 Tienes `void main()`, luego tienes tus paréntesis, así que es lo mismo que tenemos arriba, pero luego en lugar de llaves, tienes un signo igual y un signo mayor, así que una especie de flecha y luego tienes `runApp(MyApp)`. 
 
 Esto es una sintaxis Dart válida también, **es una abreviatura para las funciones que sólo tienen una y exactamente una expresión, por lo que sólo una línea de código en la función**.
+
+Este tipo de funciones flecha también puede usarse en funciones y métodos de clase propios. **El resultado de esta expresión aquí también será devuelto automáticamente**. Ahora aquí, `runApp` no devuelve nada y por lo tanto nuestra función general no devuelve nada, pero si `runApp` devolviera un valor, entonces este sería devuelto automáticamente por nuestra función aquí también.
+
+Un ejemplo simple sobre esto sería algo así:
+
+```dart
+double sum(double num1, double num2) => num1 + num2;
+
+void main() {
+  double sumResult = sum(2, 3);
+  print(sumResult); // mostrará 5
+}
+```
