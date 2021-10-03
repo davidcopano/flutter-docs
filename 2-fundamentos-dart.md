@@ -40,3 +40,23 @@ void main() {
 ```
 
 - El nombre de la nueva función se llama `addNumbers` (devolverá un valor de tipo entero `int`), y se le pasan 2 parámetros: una variable de tipo entero (`int`) llamada `num1`, y otra variable de tipo entero (`int`) llamada `num2`. Al llamar a esta función en `void main()`, lo que hace es mostrar por pantalla la suma de los 2 parámetros.
+
+## Funciones flecha (=>)
+
+En lugar de que la función 'main' se vea así:
+
+```dart
+void main() {
+  runApp(MyApp());
+}
+```
+
+También puedes ver algo que se parece a esto:
+
+```dart
+void main() => runApp(MyApp());
+```
+
+Tienes `void main()`, luego tienes tus paréntesis, así que es lo mismo que tenemos arriba, pero luego en lugar de llaves, tienes un signo igual y un signo mayor, así que una especie de flecha y luego tienes `runApp(MyApp)`. 
+
+Esto es una sintaxis Dart válida también, **es una abreviatura para las funciones que sólo tienen una y exactamente una expresión, por lo que sólo una línea de código en la función**.
