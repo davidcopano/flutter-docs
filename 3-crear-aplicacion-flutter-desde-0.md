@@ -29,6 +29,9 @@ void main() {
 // Usamos 'extends' para decirle a Dart que la clase
 // que creemos se basará en otra ya creada previamente.
 // Solo se puede extender una clase
+
+// IMPORTANTE: cada widget personalizado en Flutter necesita extender a la clase
+// StatelessWidget o StatefulWidget
 class MyCoolApp extends StatelessWidget {
   // Para extender la clase StatelessWidget, es necesario que nuestra clase
   // tenga el método 'build', al que se le pasa automáticamente
@@ -37,7 +40,14 @@ class MyCoolApp extends StatelessWidget {
   // el widget que devolvamos.
 
   // Ya que en Flutter trabajamos con widgets, el método
-  // 'build' debe devolver un widget
+  // 'build' debe devolver un widget.
+
+  // Usamos el decorator @override para dejar claro que estamos
+  // sobreescribiendo deliberadamente el método 'build' que es
+  // proporcionado por la clase StatelessWidget. Existe allí en esa clase, pero
+  // lo sobreescribimos con nuestra propia implementación; en realidad la clase
+  // StatelessWidget nos obliga a sobreescribirlo
+  @override
   Widget build(BuildContext context) {
     // 'MaterialApp' es un widget que proporciona Flutter que hace como una configuración
     // base para convertir la combinación de widgets en una aplicación que
