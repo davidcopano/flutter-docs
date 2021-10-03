@@ -6,14 +6,21 @@ A continuación se muestra un ejemplo de una aplicación creada con Flutter desd
 // lib/main.dart
 // -------------
 
-// Importamos los widgets de Flutter Material para poder mostrarlos.
+// Importamos los widgets y clases de Flutter Material para poder usarlos.
 // También podría usarse el archivo 'cupertino.dart' para tener
 // una apariencia muy parecida a los componentes nativos de iOS
 
 // NOTA: Los widgets de material.dart también funcionan si se ejecutara en iOS
 import 'package:flutter/material.dart';
 
-void main() {}
+void main() {
+  // La función 'runApp' la proporciona Flutter en el archivo anterior
+  // que importamos. Se encarga de ejecutar la aplicación mostrando el widget u
+  // objeto de clase que le pasemos en el 1er parámetro.
+
+  // En este caso, crearemos un objeto con la clase MyCoolApp declarada.
+  runApp(MyCoolApp());
+}
 
 // Usamos 'extends' para decirle a Dart que la clase
 // que creemos se basará en otra ya creada previamente.
