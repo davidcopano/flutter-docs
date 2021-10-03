@@ -13,6 +13,10 @@ A continuación se muestra un ejemplo de una aplicación creada con Flutter desd
 // NOTA: Los widgets de material.dart también funcionan si se ejecutara en iOS
 import 'package:flutter/material.dart';
 
+/*
+  - `void` quiere decir que es una función que no devuelve nada. Dart es un lenguaje fuertemente tipado, por lo que a la hora de declarar funciones es necesario especificar el tipo de dato que devuelve la función que declaremos.
+  - `main()` es un nombre de función especial que no puede usarse como nombre de otras funciones, ya que main() es el punto de entrada de las aplicaciones Dart (Dart/Flutter automáticamente llama a la función main() cuando la aplicación empieza a ejecutarse). 
+*/
 void main() {
   // La función 'runApp' la proporciona Flutter en el archivo anterior
   // que importamos. Se encarga de ejecutar la aplicación mostrando el widget u
