@@ -7,3 +7,8 @@ Para esto, es importante entender que tenemos diferentes tipos de widgets en Flu
 Ahora bien, estos son los widgets que vemos, vemos un botón, vemos el texto, eso es lo que vemos y eso es, por supuesto, crucial para cualquier aplicación, pero igualmente cruciales son los **widgets invisibles** que nos **ayudan con el diseño y con el control de cómo se comporta nuestro árbol de widgets y cómo se ve** y ahí tenemos cosas como `Row`, `Column`, `ListView` y así sucesivamente. 
 
 También son widgets que vienen con Flutter y que no tenemos que construir nosotros mismos, que no vemos, pero que nos ayudan a estructurar nuestro contenido. Así que estos widgets dan estructura a nuestra aplicación y controlan cómo se dibujan los widgets visibles en la pantalla y por lo tanto, por supuesto, son súper importantes.
+
+También hay un widget muy importante que también se incluye en Flutter, el widget `Container`, que pertenece a ambas categorías, por defecto es invisible pero también se le puede dar un poco de estilo para que se pueda ver.
+
+![Flutter Widget Types 1](/images/flutter-widget-types-1.jpg?raw=true "Flutter Widget Types 1")
+![Flutter Widget Types 2](/images/flutter-widget-types-2.jpg?raw=true "Flutter Widget Types 2")
