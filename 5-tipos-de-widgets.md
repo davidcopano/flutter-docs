@@ -1,0 +1,9 @@
+# Tipos de widgets
+
+Siguiendo el ejemplo anterior con `Scaffold` y su parámetro `body`, quiero pasar más de un widget: quiero tener un texto y un par de botones. 
+
+Para esto, es importante entender que tenemos diferentes tipos de widgets en Flutter. Tenemos los **widgets visibles** que están **relacionados con la entrada del usuario y la salida de datos**, cosas como un botón o un texto o una tarjeta (sólo hemos visto el texto de todos estos ejemplos aquí hasta ahora), pero hay más widgets, como el `RaisedButton`, que representa un botón, etc.
+
+Ahora bien, estos son los widgets que vemos, vemos un botón, vemos el texto, eso es lo que vemos y eso es, por supuesto, crucial para cualquier aplicación, pero igualmente cruciales son los **widgets invisibles** que nos **ayudan con el diseño y con el control de cómo se comporta nuestro árbol de widgets y cómo se ve** y ahí tenemos cosas como `Row`, `Column`, `ListView` y así sucesivamente. 
+
+También son widgets que vienen con Flutter y que no tenemos que construir nosotros mismos, que no vemos, pero que nos ayudan a estructurar nuestro contenido. Así que estos widgets dan estructura a nuestra aplicación y controlan cómo se dibujan los widgets visibles en la pantalla y por lo tanto, por supuesto, son súper importantes.
