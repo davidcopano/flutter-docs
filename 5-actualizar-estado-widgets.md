@@ -42,6 +42,12 @@ class MyCoolAppState extends State<MyCoolApp> {
     if (questionIndex == (questions.length - 1)) {
       print('No more questions available!');
     } else {
+      /*
+        setState() es una función que obliga a Flutter a volver a renderizar la 
+        interfaz de usuario. Sin embargo, no toda la interfaz de usuario de toda 
+        la app, en cambio lo que hace setState al final es llamar a build() de 
+        nuevo de este widget donde llamas a setState
+      */
       setState(() {
         questionIndex++;
       });
