@@ -8,6 +8,12 @@ Así que el estado de la aplicación sería cosas como si el usuario está auten
 
 ## Diferencias entre widgets sin estado (Stateless) y con estado (Stateful)
 
+Aunque puedes añadir (y también cambiar) propiedades en un `StatelessWidget`, no hay forma de decirle a Flutter que debe volver a ejecutar `build()` ante tales cambios.
+
+Todos los widgets (es decir, tanto `Stateless` como `Stateful`) pueden recibir datos a través de sus constructores. Pero sólo los `StatefulWidget` pueden tener propiedades de clase donde pueden actualizar los valores y volver a ejecutar el método `build()`.
+
+El método `setState()` de los `StatefulWidget` es un "activador" que informa a Flutter de que necesita volver a ejecutar el método `build()` del widget.
+
 ![Stateless vs Stateful](/images/flutter-stateless-stateful-widgets-slide.jpg?raw=true "Stateless vs Stateful")
 
 ### Ejemplo de widget Stateful
