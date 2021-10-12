@@ -6,6 +6,68 @@
 
 Así que el estado de la aplicación sería cosas como si el usuario está autenticado o si estamos construyendo una aplicación que los usuarios pueden usar para encontrar nuevos trabajos, podríamos tener los trabajos generales que cargamos desde un servidor. El estado del widget podría ser cosas como la entrada actual del usuario entrada del usuario o si estamos cargando datos y queremos mostrar un spinner o como en nuestra aplicación, el estado del widget de la aplicación que tenemos podría ser qué pregunta está actualmente seleccionada y ese estado puede y típicamente cambiará en una aplicación.
 
-## Widgets sin estado o con estado (Stateless vs Stateful)
+## Diferencias entre widgets sin estado (Stateless) y con estado (Stateful)
 
 ![Stateless vs Stateful](/images/flutter-stateless-stateful-widgets-slide.jpg?raw=true "Stateless vs Stateful")
+
+### Ejemplo de widget Stateful
+
+```dart
+// lib/main.dart
+// -------------
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyCoolApp());
+
+class MyCoolApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => MyCoolAppState();
+}
+
+class MyCoolAppState extends State<MyCoolApp> {
+  var questions = [
+    'What\'s your favourite color?',
+    'What\'s your favourite animal?',
+  ];
+  var questionIndex = 0;
+
+  void answerQuestion() {
+    if (questionIndex == (questions.length - 1)) {
+      print('No more questions available!');
+    } else {
+      setState(() {
+        questionIndex++;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('My First App'),
+        ),
+        body: Column(
+          children: [
+            Text(questions[questionIndex]),
+            RaisedButton(
+              child: Text('Answer 1'),
+              onPressed: answerQuestion,
+            ),
+            RaisedButton(
+              child: Text('Answer 2'),
+              onPressed: answerQuestion,
+            ),
+            RaisedButton(
+              child: Text('Answer 3'),
+              onPressed: answerQuestion,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
