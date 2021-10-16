@@ -8,6 +8,8 @@ Documentación propia de Flutter
 
 - Documentación oficial de Flutter: https://flutter.io/docs/
 
+- Catálogo de widgets incluidos en Flutter: https://flutter.dev/docs/development/ui/widgets
+
 - Guía de configuración en macOS: https://flutter.io/setup-macos
 
 - Guía de configuración en Windows: https://flutter.io/setup-windows
