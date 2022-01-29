@@ -107,7 +107,7 @@ class Answer extends StatelessWidget {
 }
 ```
 
-## ¿Cómo podemos pasar la función `_answerQuestion` a nuestros widgets `Answer`?
+# ¿Cómo podemos pasar la función `_answerQuestion` a nuestros widgets `Answer`?
 
 Al igual que podemos pasar texto a un widget, también podemos pasar un puntero a una función a un widget. 
 
