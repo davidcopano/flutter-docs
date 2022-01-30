@@ -31,3 +31,11 @@ var questions = [
   },
 ];
 ```
+
+Para acceder a cada `questionText` de la variable anterior, lo hacemos así:
+
+```dart
+for(var i = 0; i < questions.length; i++) {
+  print(questions[i]['questionText']); // <- `i` es el índice en cada iteración, `questionText` es la clave que contiene cada pregunta
+}
+```
