@@ -2,16 +2,16 @@
 
 ## `final`
 
-La palabra clave `final` se utiliza para establecer los valores de la variable y no puede ser alterada en el futuro, ni ningún tipo de operación realizada sobre estas variables puede alterar su valor (estado).
+La palabra clave `final` se utiliza para establecer el valor de una variable y no puede ser alterada en el futuro, ni ningún tipo de operación realizada sobre estas variables puede alterar su valor.
 
 ```dart
-// Without datatype
-final variableName1;
-final variableName2 = 2;
+// sin tipo de dato
+final myNumber1;
+final myNumber2 = 2;
 
-// With datatype
-final String variableNameString1 = 'hello 1';
-final String variableNameString2 = 'hello 2';
+// con tipo de dato
+final String myString1;
+final String myString2 = 'hello 2';
 ```
 
 Si intentamos reasignar las mismas variables, se mostrará un error.
