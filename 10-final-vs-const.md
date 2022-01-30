@@ -27,3 +27,19 @@ const date = new DateTime.now();
 // esto NO DARÁ error
 final date = new DateTime.now();
 ```
+
+### Usar `const` en el propio valor en lugar de la variable
+
+Puede establecerse que el valor de una variable sea constante, pero la propia variable puede tener otro valor.
+
+Un ejemplo de esto puede ser el siguiente:
+
+```dart
+var dummy = const ['Hello'];
+
+// esto de abajo dará error, porque se intenta modificar el valor de la variable
+dummy.add('David');
+
+// esto de abajo sí funcionará, porque la variable declarada antes NO es constante
+dummy = [];
+```
