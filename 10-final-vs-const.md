@@ -1,7 +1,5 @@
 # Palabras clave `final` vs `const`
 
-Aunque estas palabras clave pueden parecer iguales, hay algunas diferencias entre ellas:
-
 ## `final`
 
 La palabra clave `final` se utiliza para establecer los valores de la variable y no puede ser alterada en el futuro, ni ningún tipo de operación realizada sobre estas variables puede alterar su valor (estado).
