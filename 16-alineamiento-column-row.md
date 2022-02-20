@@ -11,7 +11,3 @@ Según un widget u otro, un argumento u otro puede ser un alineamiento **vertica
 El valor de estos alineamientos pueden ser los siguientes:
 
 ![Alignments](/images/rows-columns-cheat-sheet-2.jpg?raw=true "Alignments")
-
-## Widgets `Container` vs `Column/Row`
-
-![Container vs Column/Row](/images/rows-columns-cheat-sheet-5.jpg?raw=true "Container vs Column/Row")
