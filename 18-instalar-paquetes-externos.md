@@ -14,3 +14,18 @@ Si buscas `date format dart` en Google, encontrarás este paquete `intl`:
 ![intl pub.dev](/images/intl-pubdev.png?raw=true "intl pub.dev")
 
 [pub.dev](https://pub.dev/) es una página importante en el universo de Dart y Flutter, es un sitio, una página web, donde encuentras un montón de paquetes que puedes instalar en tus proyectos Dart/Flutter.
+
+## Instalación
+
+En el apartado **Installing** del paquete en [pub.dev](https://pub.dev/), o en el **README** si lo ves en Github, encontrarás la forma de instalar el paquete.
+
+El procedimiento habitual es el siguiente:
+
+1) Abrir el archivo `pubspec.yaml` y añadir el nombre del paquete junto con la versión:
+
+```yaml
+# ...
+dependencies:
+  intl: ^0.17.0
+# ...
+```
