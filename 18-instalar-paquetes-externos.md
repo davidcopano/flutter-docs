@@ -29,3 +29,9 @@ dependencies:
   intl: ^0.17.0
 # ...
 ```
+
+2) Guardamos el archivo. Si tenemos instaladas las extensiones de Dart y Flutter en VSCode, **instalará por nosotros automáticamente el paquete**.
+
+3) Seguir las instrucciones de uso del paquete en [pub.dev](https://pub.dev/), o en el **README** si lo ves en Github.
+
+Dicho esto, **lo más recomendable es seguir las instrucciones de instalación de cada paquete.**
