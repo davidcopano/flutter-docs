@@ -17,3 +17,29 @@ Card(
 ),
 // ...
 ```
+
+## Modificar estilos del widget `TextField`
+
+Usando el argumento `decoration` de este widget, podemos modificar sus estilos con `InputDecoration`, así como añadir un label o texto explicativo de lo que pide el campo de texto:
+
+```dart
+// ...
+Column(
+  crossAxisAlignment: CrossAxisAlignment.end,
+  children: [
+    const TextField(
+      decoration: InputDecoration(labelText: 'Title'),
+    ),
+    const TextField(
+      decoration: InputDecoration(labelText: 'Amount'),
+    ),
+    TextButton(
+      onPressed: () {},
+      child: const Text('Add Transaction'),
+    )
+  ],
+),
+// ...
+```
+
+## Recoger valor introducido por el usuario
