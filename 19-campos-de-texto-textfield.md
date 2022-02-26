@@ -88,7 +88,7 @@ class MyHomePage extends StatelessWidget {
 }
 ```
 
-**NOTA**: Usando esta esta forma, Flutter se quejará 
+**NOTA**: Usando esta esta forma, Flutter se quejará o nos dará una advertencia en la clase `MyHomePage`, ya que está marcada como inmutable: quiere decir que tiene un campo, una propiedad que cambia o que no es `final`. Eso es cierto, `titleInput` y `amountInput` no son finales, ya que pueden cambiar.
 
 ### 2) Usar `TextEditingController`
 
@@ -131,3 +131,5 @@ class MyHomePage extends StatelessWidget {
   }
 }
 ```
+
+**Esta segunda forma es la más cómoda**, ya que Flutter se encargará por detrás de controlar y obtener los valores introducidos por el usuario en los campos de texto. Además, a diferencia de la primera forma, Flutter ya no se quejará o nos dará una advertencia en la clase `MyHomePage` que está como inmutable, ya que todos los campos son finales o `final`.
