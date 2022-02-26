@@ -88,4 +88,46 @@ class MyHomePage extends StatelessWidget {
 }
 ```
 
-### 2) 
+**NOTA**: Usando esta esta forma, Flutter se quejará 
+
+### 2) Usar `TextEditingController`
+
+`TextEditingController` es una clase proporcionada por Flutter con la que puedes asignar dicho controlador a tus campos de texto con la ayuda del argumento `controller`:
+
+```dart
+class MyHomePage extends StatelessWidget {
+  // ...
+  final titleController = TextEditingController();
+  final amountController = TextEditingController();
+  // ...
+
+  @override
+  Widget build(BuildContext context) {
+    // ...
+    Column(
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: [
+        TextField(
+          decoration: InputDecoration(labelText: 'Title'),
+          controller: titleController,
+        ),
+        TextField(
+          decoration: InputDecoration(labelText: 'Amount'),
+          controller: amountController
+        ),
+        TextButton(
+          onPressed: () {
+            print(titleController.text);
+            print(amountController.text);
+          },
+          child: const Text('Add Transaction'),
+          style: TextButton.styleFrom(
+            primary: Colors.purple,
+          ),
+        )
+      ],
+    ),
+    // ...
+  }
+}
+```
