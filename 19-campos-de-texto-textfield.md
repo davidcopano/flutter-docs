@@ -43,3 +43,49 @@ Column(
 ```
 
 ## Recoger valor introducido por el usuario
+
+Hay dos formas de acceder al valor de un `TextField`. Depende de ti cuál elegir. También depende de la complejidad del formulario que estés construyendo:
+
+### 1) Guardar el valor introducido cada vez que el usuario escriba
+
+```dart
+class MyHomePage extends StatelessWidget {
+  // ...
+  String titleInput;
+  String amountInput;
+  // ...
+
+  @override
+  Widget build(BuildContext context) {
+    // ...
+    Column(
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: [
+        TextField(
+          decoration: InputDecoration(labelText: 'Title'),
+          onChanged: (value) {
+            titleInput = value; // <-- cada vez que cambie el valor, lo guardamos en una variable
+          },
+        ),
+        TextField(
+          decoration: InputDecoration(labelText: 'Amount'),
+          onChanged: (value) => amountInput = value, // <-- también puede usarse una función flecha
+        ),
+        TextButton(
+          onPressed: () {
+            print(titleInput);
+            print(amountInput);
+          },
+          child: const Text('Add Transaction'),
+          style: TextButton.styleFrom(
+            primary: Colors.purple,
+          ),
+        )
+      ],
+    ),
+    // ...
+  }
+}
+```
+
+### 2) 
