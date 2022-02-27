@@ -1,5 +1,9 @@
 # Hacer widgets scrollables con `SingleChildScrollView`
 
+## NOTA: Mejor usar [el widget `ListView`](21-listviews.md) para conseguir esto
+
+-------------------------------------------------------------------------------------
+
 Por defecto, los widgets `Column` y `Row` no permiten hacer scroll de sus widgets hijos (argumento `children`).
 
 Para arreglar esto, envolvemos nuestro `Column` o `Row` en otro widget de Flutter llamado `SingleChildScrollView`:
