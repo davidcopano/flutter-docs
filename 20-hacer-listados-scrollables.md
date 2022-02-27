@@ -1,4 +1,4 @@
-# Hacer listado de widgets scrollables
+# Hacer widgets scrollables con `SingleChildScrollView`
 
 Por defecto, los widgets `Column` y `Row` no permiten hacer scroll de sus widgets hijos (argumento `children`).
 
@@ -34,8 +34,20 @@ class MyHomePage extends StatelessWidget {
 }
 ```
 
-Otra opción para hacer scrollable un widget es envolverlo en un `Container`, asignarle un `height` y ponerle como `child` nuestro `SingleChildScrollView`:
+Otra opción para **hacer scrollable un widget concreto** es envolverlo en un `Container`, asignarle un `height` y ponerle como `child` nuestro `SingleChildScrollView`:
 
 ```dart
-
+@override
+Widget build(BuildContext context) {
+  return Container(
+    height: 300,
+    child: SingleChildScrollView(
+      child: Column( // se podrá hacer scroll en los widgets children
+        children: [
+          // ...
+        ],
+      ),
+    ),
+  );
+}
 ```
