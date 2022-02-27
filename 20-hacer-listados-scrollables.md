@@ -1,0 +1,41 @@
+# Hacer listado de widgets scrollables
+
+Por defecto, los widgets `Column` y `Row` no permiten hacer scroll de sus widgets hijos (argumento `children`).
+
+Para arreglar esto, envolvemos nuestro `Column` o `Row` en otro widget de Flutter llamado `SingleChildScrollView`:
+
+```dart
+class MyHomePage extends StatelessWidget {
+  MyHomePage({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Flutter App'),
+      ),
+      body: SingleChildScrollView(
+        child: Column( // se podrá hacer scroll en toda la pantalla
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              width: double.infinity,
+              child: const Card(
+                color: Colors.blue,
+                child: Text('CHARTS!'),
+              ),
+            ),
+            UserTransactions(),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+Otra opción para hacer scrollable un widget es envolverlo en un `Container`, asignarle un `height` y ponerle como `child` nuestro `SingleChildScrollView`:
+
+```dart
+
+```
