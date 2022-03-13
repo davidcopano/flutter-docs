@@ -1,4 +1,4 @@
-# Mostrar un modal inferior
+# Mostrar/ocultar un modal
 
 Para mostrar un modal inferior en la pantalla como el siguiente:
 
@@ -51,3 +51,11 @@ Widget build(BuildContext context) {
   );
 }
 ````
+
+Para **cerrar el modal dentro de sí mismo**, añadimos este código dentro del widget del modal:
+
+```dart
+Navigator.of(context).pop();
+```
+
+Puedes ver un ejemplo completo de esto [en este archivo](https://github.com/davidcopano/flutter_personal_expenses_app/blob/68088f9326c152f1c80b26cc8164c1abb51c496c/lib/widgets/new_transaction.dart#L16)
